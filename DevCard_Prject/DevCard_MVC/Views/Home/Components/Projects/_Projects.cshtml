@@ -1,0 +1,39 @@
+﻿@model IEnumerable<DevCard_MVC.Models.Project>
+
+<section class="featured-section p-3 p-lg-5">
+	<div class="container">
+		<h2 class="section-title font-weight-bold mb-5">خاص ترین پروژه ها</h2>
+        <div class="row">
+            @foreach (var prj in Model)
+            {
+                <div class="col-md-6 mb-5">
+                    <div class="card project-card">
+                        <div class="row no-gutters">
+                            <div class="col-lg-4 card-img-holder">
+                                <img src="~/assets/images/project/@prj.Image" class="card-img" alt="@prj.">
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <a href="project.html" class="theme-link">
+                                            @prj.Id:@prj.Name
+                                         
+                                        </a>
+                                    </h5>
+                                    <p class="card-text">
+                                        @prj.Description
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">مشتری:@prj.Client</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            }
+
+
+        </div>
+	</div>
+</section>
+
