@@ -10,14 +10,13 @@
                     <div class="card project-card">
                         <div class="row no-gutters">
                             <div class="col-lg-4 card-img-holder">
-                                <img src="~/assets/images/project/@prj.Image" class="card-img" alt="@prj.">
+                                <img src="~/assets/images/project/@prj.Image" class="card-img" alt="@prj.Description">
                             </div>
                             <div class="col-lg-8">
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        <a href="project.html" class="theme-link">
+                                        <a asp-controller="Home" asp-action="ProjectDetails" asp-route-id="@prj.Id" class="theme-link">
                                             @prj.Id:@prj.Name
-                                         
                                         </a>
                                     </h5>
                                     <p class="card-text">
@@ -29,9 +28,7 @@
                         </div>
                     </div>
                 </div>
-
             }
-
 
         </div>
 	</div>

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace DevCard_MVC.Models
 {
@@ -12,6 +13,7 @@ namespace DevCard_MVC.Models
         [EmailAddress(ErrorMessage = "ایمیل وارد شده صحیح نیست")]
         public string Email { get; set; }
         public string Message { get; set; }
-        public string Services { get; set; }
+        public int Service { get; set; }
+        public SelectList Services { get; set; }
     }
 }

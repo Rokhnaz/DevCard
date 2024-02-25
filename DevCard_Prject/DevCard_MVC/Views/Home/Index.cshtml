@@ -39,9 +39,12 @@
 @*Loading component view model*@
 @await Component.InvokeAsync("Projects")
 @*//End loading view component *@
-@await Component.InvokeAsync("LatestArticles")
+
 <div class="container">
-	<hr>
+    <hr>
 </div>
+
+@await Component.InvokeAsync("LatestArticles")
+
 
 

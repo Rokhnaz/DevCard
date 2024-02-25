@@ -4,7 +4,7 @@
 <head>
 	<title>DevCard از موسسه آتریا</title>
 
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
@@ -19,7 +19,8 @@
 
 <body>
 
-	<partial name="Header"/>
+<partial name="Header"/>
+@*@await Html.PartialAsync("Header");*@
 
 	<div class="main-wrapper">
 
@@ -36,8 +37,8 @@
 @*//validation jquery script*@
 <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
 <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-@* <script type="text/javascript" src="@Url.Action("index","Test")"></script>
-
- *@</body>
+@* <script type="text/javascript" src="@Url.Action("index","Test")"></script>*@
+@* <script type="text/javascript" src=@Url.Action("jsr","Home")></script> *@
+</body>
 
 </html>
